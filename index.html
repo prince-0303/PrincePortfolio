@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cv.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "AvMJtTpFDgJCtTPeQ",
+            });
+        })();
+    </script>
+    <title>Prince-Portfolio</title>
+</head>
+
+<body>
+    <nav class="bg-white shadow-md w-full fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#top">
+                    <span class="text-3xl font-bold font-stretch-ultra-expanded">Prince</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()">
+                    &#9776;
+                </button>
+
+                <div id="menu" class="hidden md:flex space-x-4 text-lg items-center">
+                    <a href="#About" class="cursor-pointer hover:text-stone-500">About</a>
+                    <a href="#Skills" class="cursor-pointer hover:text-stone-500">Skills</a>
+                    <a href="#Projects" class="cursor-pointer hover:text-stone-500">Projects</a>
+                    <a href="#Contact" class="cursor-pointer hover:text-stone-500">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-2 py-4 bg-white shadow-md">
+            <a href="#About" class="cursor-pointer hover:text-stone-500">About</a>
+            <a href="#Skills" class="cursor-pointer hover:text-stone-500">Skills</a>
+            <a href="#Projects" class="cursor-pointer hover:text-stone-500">Projects</a>
+            <a href="#Contact" class="cursor-pointer hover:text-stone-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home" class="w-max mx-auto flex justify-around m-60">
+        <div>
+            <img src="Pic.png" alt="Profile Picture" class="p-10 w-110 rounded-full">
+        </div>
+        <div class="flex flex-col items-center justify-center gap-3">
+            <p class="text-gray-600 font-bold">Hello i'm</p>
+            <p class="text-6xl font-bold">Prince Biju</p>
+            <p class="font-stretch-200% text-2xl font-bold text-gray-600">Frontend Developer</p>
+            <!-- Button -->
+            <div class="flex gap-3">
+                <a href=""><button
+                        class="border-2 border-black rounded-full cursor-pointer hover:bg-[#ededed] p-4">Download
+                        CV</button></a>
+                <a href="#Contact"><button
+                        class="border-2 bg-[#424242] cursor-pointer text-white hover:bg-[#555555] rounded-full p-4">Contact
+                        Info</button></a>
+            </div>
+            <div class="flex gap-5">
+                <a href="https://www.linkedin.com/in/princebiju/" target="_blank"><img class="w-8"
+                        src="icons/linkedin.png" alt=""></a>
+                <a href="https://github.com/prince-0303" target="_blank"><img class="w-8" src="icons/github.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="About" class="p-6 md:p-10 lg:p-20 flex justify-center">
+        <div class="max-w-6xl w-full flex flex-col items-center">
+            <!-- Title Section -->
+            <div class="text-center">
+                <p class="text-gray-600 font-bold">Get to Know More</p>
+                <p class="text-4xl md:text-6xl font-bold">About Me</p>
+            </div>
+
+            <!-- About Container -->
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-6 mt-6 md:mt-12 lg:mt-20">
+                <div class="flex flex-col gap-6 w-full lg:w-1/2">
+                    <!-- Education Section -->
+                    <div class="border-2 border-black p-6 md:p-10 rounded-3xl w-full text-center">
+                        <div class="flex justify-center">
+                            <img class="w-8" src="icons/graduation.png">
+                        </div>
+                        <div class="flex flex-col items-center text-gray-600 gap-2">
+                            <p class="text-2xl font-stretch-200% font-bold">Education</p>
+                            <p class="text-xl">B.Com Bachelors Degree</p>
+                            <p class="text-xl">Diploma (Data Science)</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="border-2 border-black p-6 md:p-10 rounded-3xl w-full text-center">
+                        <div class="flex justify-center">
+                            <img class="w-8" src="icons/medal.png">
+                        </div>
+                        <div class="flex flex-col items-center text-gray-600 gap-2">
+                            <p class="text-2xl font-stretch-200% font-bold">Experience</p>
+                            <p class="text-xl">Intern - Data Science</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Paragraph -->
+                <div class="w-full lg:w-1/2 max-w-4xl p-6 md:p-8 lg:p-10 flex items-center">
+                    <p class="text-xl text-gray-600 text-center lg:text-left">
+                        I am a dedicated web development student with a strong passion for coding and technology.
+                        Recently, I completed a project to clone a website, gaining hands-on experience in front-end
+                        development. Prior to this, I successfully completed a course in data science, expanding my
+                        analytical and problem-solving skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="Skills" class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 md:py-40">
+        <div class="flex flex-col items-center mt-30 justify-center">
+            <p class="text-4xl md:text-6xl font-bold">Skills</p>
+        </div>
+
+        <div class="flex justify-center mt-10">
+            <div class="border-2 border-black p-6 md:p-8 rounded-3xl w-full max-w-2xl">
+                <p class="text-2xl font-bold text-center font-stretch-200% text-gray-600">Frontend Development</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+                    <div class="flex flex-col gap-2 items-center justify-center p-4">
+                        <p class="text-xl font-bold text-gray-600">HTML</p>
+                        <p class="text-gray-600">Experienced</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center justify-center p-4">
+                        <p class="text-xl font-bold text-gray-600">CSS</p>
+                        <p class="text-gray-600">Experienced</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center justify-center p-4">
+                        <p class="text-xl font-bold text-gray-600">JavaScript</p>
+                        <p class="text-gray-600">Experienced</p>
+                    </div>
+                    <div class="flex flex-col gap-2 items-center justify-center p-4">
+                        <p class="text-xl font-bold text-gray-600">Tailwind</p>
+                        <p class="text-gray-600">Experienced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="Projects" class="w-full mt-50 py-16">
+        <div class="flex flex-col items-center justify-center text-center mt-60">
+            <p class="text-4xl md:text-6xl font-bold">Projects</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-10">
+            <!-- Project Card -->
+            <div class="border-2 border-black p-6 md:p-8 rounded-3xl w-full max-w-2xl text-center">
+                <p class="text-2xl font-bold text-gray-600">EaseMyTrip</p>
+
+                <!-- Project Description -->
+                <div class="p-4">
+                    <p class="text-gray-700">
+                        "I recently completed a project where I successfully cloned the EaseMyTrip website.
+                        This project allowed me to gain hands-on experience in front-end development,
+                        focusing on replicating the design and layout of the original site. Through this,
+                        I enhanced my skills in HTML, CSS, while also improving my ability to analyze
+                        and implement complex UI structures."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <div class="flex flex-col mt-100 items-center justify-center">
+            <p class="text-4xl md:text-6xl font-bold">Get In Touch</p>
+            <p class="text-2xl font-bold text-gray-600">Contact me. I'll get back to you quickly. Promise.</p>
+        </div>
+        <!-- Form -->
+        <div class="flex flex-col items-center justify-center mt-10">
+            <div class="border-2 border-black p-6 md:p-8 rounded-3xl w-full max-w-2xl text-center">
+                <div class="p-4">
+                    <form id="contact-form" class="flex flex-col items-center gap-4">
+                        <div>
+                            <input type="text" id="name" placeholder="Enter Your Name" name="name" required
+                                class="mt-1 p-2 border border-gray-300 rounded-md w-100">
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Enter Your Email" name="email" required
+                                class="mt-1 p-2 border border-gray-300 rounded-md w-100">
+                        </div>
+                        <div>
+                            <textarea id="message" name="message" placeholder="Enter Your Message" rows="4" required
+                                class="mt-1 p-2 border border-gray-300 rounded-md w-100"></textarea>
+                        </div>
+                        <button type="submit" class="bg-[#424242] text-white p-2 w-50 rounded-md">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-50">
+        <footer class="mt-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold font-stretch-ultra-expanded">Thank you For Visiting.</span>
+                    <div class="flex gap-5">
+                        <a href="https://www.linkedin.com/in/princebiju/" target="_blank"><img class="w-8"
+                                src="icons/linkedin.png" alt=""></a>
+                        <a href="https://github.com/prince-0303" target="_blank"><img class="w-8" src="icons/github.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            sendMail();
+        });
+
+        function sendMail() {
+            let params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+            const serviceID = "service_fhp39go";
+            const templateID = "template_zznrr1h";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Your Message Sent Successfully");
+                })
+                .catch((err) => console.log(err));
+        }
+    </script>
+</body>
+
+</html>
